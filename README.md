@@ -1,16 +1,107 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#  💸 Expense Tracker
 
-Currently, two official plugins are available:
+### Turn daily spending into clear financial decisions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p>
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/React_Router-7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white" alt="React Router" />
+  <img src="https://img.shields.io/badge/Status-Building-orange?style=for-the-badge" alt="Status" />
+</p>
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Overview
+A clean and modern **Expense Tracker** web app built with **React + Vite**.  
+This project currently includes routed pages for Home, Analysis, History, and Login, and is ready to grow into a full personal finance dashboard.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🖼️ Live Preview
+> Add your screenshots/GIF below for a premium repo look.
+
+| Home | Analysis |
+|------|----------|
+| ![Home Preview](./src/assets/budget.webp) | ![Analysis Preview](./src/assets/budget.webp) |
+
+## 🧩 Current Routes
+- Multi-page navigation with `react-router-dom`
+- Home layout with nested routes
+- Dedicated Analysis page scaffold
+- Dedicated History page scaffold
+- Dedicated Login page scaffold
+- Fast development workflow with Vite
+
+## 🛠️ Tech Stack
+| Category | Tools |
+|----------|-------|
+| Frontend | React 19 |
+| Build Tool | Vite 7 |
+| Routing | React Router DOM 7 |
+| Charts Ready | react-chartjs-2 |
+| Code Quality | ESLint |
+
+## 📁 Project Structure
+```bash
+Expense_Tracker/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Analysis.jsx
+│   │   ├── History.jsx
+│   │   ├── Home.jsx
+│   │   └── Login.jsx
+│   ├── Hero_page/
+│   │   └── ExpenseTracker.jsx
+│   ├── Navbar/
+│   │   ├── Navbar.jsx
+│   │   └── Navbar.css
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+└── vite.config.js
+
+```
+
+## 🚀 Quick Start
+```bash
+# 1) Go to project
+cd Expense_Tracker
+
+# 2) Install dependencies
+npm install
+
+# 3) Start dev server
+npm run dev
+```
+
+## 📦 Production Build
+```bash
+npm run build
+npm run preview
+```
+---
+
+## 🎯 Roadmap
+- [ ] Add transaction form (income/expense)
+- [ ] Store transactions in localStorage/backend
+- [ ] Add category charts and trend analytics
+- [ ] Add monthly and yearly filters
+- [ ] Add auth + protected routes
+
+## 🤝 Contributing
+Contributions are welcome.
+Open an issue to discuss major improvements before creating a PR.
+
+## 📄 License
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+### ?? Built with focus, coffee, and React
+
+</div>
