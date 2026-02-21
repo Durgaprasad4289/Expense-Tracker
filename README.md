@@ -36,6 +36,7 @@ This project currently includes routed pages for Home, Analysis, History, and Lo
 
 ## 🛠️ Tech Stack
 <div align="center">
+  
 | Category | Tools |
 |----------|-------|
 | Frontend | React 19 |
