@@ -35,6 +35,7 @@ This project currently includes routed pages for Home, Analysis, History, and Lo
 - Fast development workflow with Vite
 
 ## 🛠️ Tech Stack
+<div align="center">
 | Category | Tools |
 |----------|-------|
 | Frontend | React 19 |
@@ -42,6 +43,8 @@ This project currently includes routed pages for Home, Analysis, History, and Lo
 | Routing | React Router DOM 7 |
 | Charts Ready | react-chartjs-2 |
 | Code Quality | ESLint |
+</div>
+---
 
 ## 📁 Project Structure
 ```bash
@@ -102,6 +105,6 @@ This project is licensed under the **MIT License**.
 
 <div align="center">
 
-### ?? Built with focus, coffee, and React
+### 📈 Built with focus, consisteny, and React
 
 </div>
