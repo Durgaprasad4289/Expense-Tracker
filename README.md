@@ -24,7 +24,7 @@ This project currently includes routed pages for Home, Analysis, History, and Lo
 
 | Home | Analysis |
 |------|----------|
-| ![Home Preview](./src/assets/budget.webp) | ![Analysis Preview](./src/assets/budget.webp) |
+| <img width="474" height="414" alt="Image" src="https://github.com/user-attachments/assets/e4233c7e-ba21-413e-8eca-eea01d8a16b8" /> | <img width="474" height="414" alt="Image" src="https://github.com/user-attachments/assets/2aa20c4b-f7b9-42ea-b191-413f891ab1e2" />) |
 
 ## 🧩 Current Routes
 - Multi-page navigation with `react-router-dom`
@@ -136,6 +136,6 @@ This project is licensed under the **MIT License**.
 
 <div align="center">
 
-### ?? Built with focus, coffee, and React
+###  Built with focus, coffee, and React
 
 </div>
