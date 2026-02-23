@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css"
-export default function (){
-    return(
-        <div className="nav">
-            <NavLink id="links" to="/">Home</NavLink>
-            <NavLink id="links" to="/analysis">Analysis</NavLink>
-            <NavLink id="links" to="/History">History</NavLink>
-            <NavLink id="links" to="/login">Login</NavLink>
-        </div>
+
+export default function Navbar() {
+    return (
+        <nav className="nav">
+            <NavLink className="nav-link" to="/">Home</NavLink>
+            <NavLink className="nav-link" to="/analysis">Analysis</NavLink>
+            <NavLink className="nav-link" to="/history">History</NavLink>
+            <NavLink className="nav-link" to="/login">Login</NavLink>
+        </nav>
     )
 }
