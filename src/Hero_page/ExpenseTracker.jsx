@@ -25,11 +25,11 @@ export default function Tracker() {
     );
 
     const [Income, setIncome] = useState(
-        savedData.Income || { total: 0, history: [] }
+        savedData.Income || { total: 0, history: [],IncomeType: [] }
     );
 
     const [Expense, setExpense] = useState(
-        savedData.Expense || { total: 0, history: [] }
+        savedData.Expense || { total: 0, history: [],ExpenseType: [] }
     );
 
     // Save to localStorage whenever state changes
@@ -58,12 +58,14 @@ export default function Tracker() {
         if (transactionType === "income") {
             setIncome(prev => ({
                 total: prev.total + value,
-                history: [...prev.history, value]
+                history: [...prev.history, value],
+                IncomeType: [...(prev.IncomeType || []), incomeType]
             }));
         } else {
             setExpense(prev => ({
                 total: prev.total + value,
-                history: [...prev.history, value]
+                history: [...prev.history, value],
+                ExpenseType: [...(prev.ExpenseType || []), expenseType]
             }));
         }
 
@@ -75,8 +77,8 @@ export default function Tracker() {
         setInputAmount("");
         setIncomeType("Salary");
         setExpenseType("Food");
-        setIncome({ total: 0, history: [] });
-        setExpense({ total: 0, history: [] });
+        setIncome({ total: 0, history: [], IncomeType: [] });
+        setExpense({ total: 0, history: [], ExpenseType: [] });
         localStorage.removeItem(STORAGE_KEY);
     };
 

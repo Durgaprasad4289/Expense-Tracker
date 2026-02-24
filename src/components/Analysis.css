@@ -1,0 +1,86 @@
+/* Main container */
+.analysis-container {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+/* Section title */
+.analysis-container h1 {
+    color: #01060e;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Card wrapper for each chart section */
+.chart-card {
+    width: 100%;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Hover effect */
+.chart-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Chart container */
+.chart-wrapper {
+    width: 100%;
+    height: 400px;
+}
+
+/* Make canvas responsive */
+.chart-wrapper canvas {
+    max-height: 400px !important;
+}
+
+/* No data message */
+.analysis-container p {
+    color: #e2e8f0;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .analysis-container {
+        padding: 20px 10px;
+    }
+
+    .chart-card {
+        padding: 20px;
+    }
+
+    .analysis-container h1 {
+        font-size: 22px;
+    }
+
+    .chart-wrapper {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-wrapper {
+        height: 200px;
+    }
+    .Pie-chart {
+        width: 100% !important;
+        height: auto !important;
+        transform: translateX(15.6%);
+    }
+}
