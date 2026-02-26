@@ -182,6 +182,7 @@ body {
     color: var(--text-primary);
     outline: none;
     cursor: pointer;
+    background: #1f1f21;
     transition: border-color 0.2s;
 }
 
