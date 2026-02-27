@@ -58,7 +58,7 @@ function Analysis() {
     useEffect(() => {
         if (savedData.Income && savedData.Income.history) {
             const IncomePieData = {
-                labels: savedData.Income.IncomeType,
+                labels: savedData.Income.history.map((_, index)=> `Transcation ${index + 1}`),
                 datasets: [
                     {
                         data: savedData.Income.history,
@@ -76,7 +76,7 @@ function Analysis() {
         }
         if (savedData.Expense && savedData.Expense.history) {
             const ExpensePieData = {
-                labels: savedData.Expense.ExpenseType,
+                labels: savedData.Expense.history.map((_, index)=> `Transcation ${index + 1}`),
                 datasets: [
                     {
                         data: savedData.Expense.history,
@@ -85,7 +85,7 @@ function Analysis() {
                             "#f59e0b",
                             "#3b82f6",
                             "#8b5cf6",
-                            "#10b981"
+                            "#0ad4e6"
                         ]
                     }
                 ]
